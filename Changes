@@ -4,6 +4,7 @@ Revision history for Perl module Crypt::SaltedHash
     - Maintenance taken over by Robert Rothenberg <perl@rhizomnic.com>
     - Updated the Git Repository
     - Updated copyright year.
+    - Minimum Perl version is v5.6.0
 
 0.09 2013-07-30
     - add Test::Fatal test requires

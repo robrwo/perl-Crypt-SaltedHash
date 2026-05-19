@@ -1,13 +1,12 @@
 package Crypt::SaltedHash;
 
+use v5.6.0;
 use strict;
 
 use Digest       ();
 use MIME::Base64 ();
 
-use vars qw($VERSION);
-
-$VERSION = '0.10';
+our $VERSION = '0.10';
 
 =encoding latin1
 
