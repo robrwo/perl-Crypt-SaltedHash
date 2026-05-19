@@ -5,6 +5,7 @@ Revision history for Perl module Crypt::SaltedHash
     - Updated the Git Repository
     - Updated copyright year.
     - Minimum Perl version is v5.6.0
+    - Added missing prerequisite
 
 0.09 2013-07-30
     - add Test::Fatal test requires
