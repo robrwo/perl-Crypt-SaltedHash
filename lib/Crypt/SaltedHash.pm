@@ -3,8 +3,10 @@ package Crypt::SaltedHash;
 use v5.6.0;
 use strict;
 
+use Crypt::SysRandom ();
 use Digest       ();
 use MIME::Base64 ();
+use POSIX ();
 
 our $VERSION = '0.10';
 
@@ -382,18 +384,9 @@ sub __get_pass_hash {
 
 sub __generate_hex_salt {
 
-    my @keychars = (
-        "0", "1", "2", "3", "4", "5", "6", "7",
-        "8", "9", "a", "b", "c", "d", "e", "f"
-    );
     my $length = shift || 8;
 
-    my $salt = '';
-    my $max  = scalar @keychars;
-    for my $i ( 0 .. $length - 1 ) {
-        my $skip = $i == 0 ? 1 : 0;    # don't let the first be 0
-        $salt .= $keychars[ $skip + int( rand( $max - $skip ) ) ];
-    }
+    my $salt = substr( unpack( "h*", Crypt::SysRandom::random_bytes( POSIX::ceil( $length / 2 ) ) ), 0, $length );
 
     return "HEX{$salt}";
 }
