@@ -1,8 +1,9 @@
 package Crypt::SaltedHash;
 
 use strict;
-use MIME::Base64 ();
+
 use Digest       ();
+use MIME::Base64 ();
 
 use vars qw($VERSION);
 
