@@ -3,6 +3,7 @@ Revision history for Perl module Crypt::SaltedHash
 {{$NEXT}}
     - Maintenance taken over by Robert Rothenberg <perl@rhizomnic.com>
     - Updated the Git Repository
+    - Updated copyright year.
 
 0.09 2013-07-30
     - add Test::Fatal test requires

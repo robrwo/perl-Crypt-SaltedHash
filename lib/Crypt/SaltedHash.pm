@@ -425,7 +425,7 @@ hashes demystified - A Primer (L<http://www.securitydocs.com/library/3439>)
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2010 Sascha Kiefer
+Copyright (C) 2005-2006, 2010, 2013, 2026 Sascha Kiefer
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
