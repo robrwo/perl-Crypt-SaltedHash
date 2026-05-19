@@ -9,6 +9,7 @@ Revision history for Perl module Crypt::SaltedHash
     - Security: Use system randomness source to generate the salt CVE-2026-47372
     - Security: Use constant-time comparison of hashes CVE-2026-47373
     - Deprecated module.
+    - Updated README
 
 0.09 2013-07-30
     - add Test::Fatal test requires
