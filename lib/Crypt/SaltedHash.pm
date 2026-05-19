@@ -308,7 +308,7 @@ sub validate {
     my $gen_hasheddata = $obj->generate;
     my $gen_hash       = &__get_pass_hash($gen_hasheddata);
 
-    return $gen_hash eq $hash;
+    return _secure_compare( $gen_hash, $hash );
 }
 
 =item B<obj()>
@@ -399,6 +399,14 @@ sub __extract_salt {
     my $binsalt = substr( $binhash, length($binhash) - ( $salt_len || 4 ) );
 
     return $binsalt;
+}
+
+sub _secure_compare {
+    my ($left, $right) = @_;
+    my $res = length $left != length $right;
+    $right = $left if $res;
+    $res |= ord(substr $left, $_, 1) ^ ord(substr $right, $_, 1) for 0 .. length($left) - 1;
+    return $res == 0;
 }
 
 =head1 SEE ALSO
