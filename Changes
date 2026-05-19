@@ -1,6 +1,6 @@
 Revision history for Perl module Crypt::SaltedHash
 
-{{$NEXT}}
+0.10 2026-05-19
     - Maintenance taken over by Robert Rothenberg <perl@rhizomnic.com>
     - Updated the Git Repository
     - Updated copyright year.
