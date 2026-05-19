@@ -7,7 +7,7 @@ use MIME::Base64 ();
 
 use vars qw($VERSION);
 
-$VERSION = '0.09';
+$VERSION = '0.10';
 
 =encoding latin1
 
