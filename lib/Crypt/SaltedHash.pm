@@ -414,7 +414,9 @@ L<Digest>, L<MIME::Base64>
 
 =head1 AUTHOR
 
-Sascha Kiefer, L<esskar@cpan.org>
+Sascha Kiefer, <esskar@cpan.org>
+
+The current maintainer is Robert Rothenberg <perl@rhizomnic.com>
 
 =head1 ACKNOWLEDGMENTS
 
