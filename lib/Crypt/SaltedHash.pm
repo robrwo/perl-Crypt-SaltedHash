@@ -8,7 +8,7 @@ use Digest       ();
 use MIME::Base64 ();
 use POSIX ();
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 =encoding latin1
 
