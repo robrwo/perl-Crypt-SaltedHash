@@ -1,6 +1,7 @@
 Revision history for Perl module Crypt::SaltedHash
 
 {{$NEXT}}
+    - Removed DOS line-endings
 
 0.11      2026-05-20 14:05:07+01:00 Europe/London
     - Fixed metadata

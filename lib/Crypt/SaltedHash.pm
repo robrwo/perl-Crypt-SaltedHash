@@ -36,6 +36,7 @@ This module has not had significant updates since 2006.
 There are newer modules that support more secure algorithms and hashing options,
 and are extensible, such as L<Crypt::Passphrase>.
 
+
 =head1 DESCRIPTION
 
 The C<Crypt::SaltedHash> module provides an object oriented interface to
