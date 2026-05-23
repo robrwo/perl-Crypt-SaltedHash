@@ -36,6 +36,7 @@ This module has not had significant updates since 2006.
 There are newer modules that support more secure algorithms and hashing options,
 and are extensible, such as L<Crypt::Passphrase>.
 
+You can use the L<Crypt::Passphrase::SaltedHash> validator to migrate to more secure algorithms.
 
 =head1 DESCRIPTION
 
